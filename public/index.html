@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project 10 — Static Site</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Project 10: GitHub Actions → GitHub Pages</h1>
+    <p class="tagline">Automatic static-site deploy with GitHub Actions</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Welcome</h2>
+      <p>This is a demo static site deployed automatically using GitHub Actions and GitHub Pages.</p>
+      <p>Every push to <code>main</code> will trigger a workflow that publishes the files in <code>/public</code>.</p>
+    </section>
+
+    <section>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About this project</a></li>
+        <li><a href="https://github.com/Raghavachari93/staticsite-deploy-githubactions">Repository</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Raghavachari93 — Project 10</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

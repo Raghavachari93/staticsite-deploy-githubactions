@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Project 10</title>
+  <link rel="stylesheet" href="/assets css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>About this Project</h1>
+    <p class="tagline">GitHub Actions + GitHub Pages</p>
+  </header>
+
+  <main class="container">
+    <p>This small project shows how to publish a static website using GitHub Actions and the official Pages deployment actions.</p>
+    <p>Push to <code>main</code> → workflow runs → site published to GitHub Pages.</p>
+    <p><a href="index.html">Back to home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Raghavachari93 — Project 10</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
